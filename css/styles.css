@@ -2,52 +2,193 @@
   Selector{property:value;}
   Put properties in alphabetical order*/
 body {
+  color:#40514E;
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
 }
 
 h1 {
-  margin-top: 0;
-  font-family: 'Sacramento', cursive;
+  color: #94d3ac;
+  font-family: 'Gloria+Hallelujah', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
 }
 
 h2 {
+  color: #94d3ac;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
 }
 
 h3 {
+  color: #655c56;
   font-family: 'Montserrat', sans-serif;
 }
 
+hr {
+  border-color: #ccedd2;
+  border-style:none;
+  border-top-style: dotted;
+  border-width: 7px;
+  margin: 100px auto;
+  width: 5%;
+}
+
+p{
+  line-height: 2;
+}
+
+a{
+  color:#655c56;
+  font-weight:bold;
+  line-height:2;
+  font-family: 'Montserrat', sans-sans-serif;
+  margin:10px 20px;
+/*These 4 lines replaced all of this code:
+
+   .footer-link1 {
+    color: #655c56;
+    font-weight: bold;
+    line-height: 2;
+    margin: 40px;
+  }
+
+  .footer-link2 {
+    color: #655c56;
+    font-weight: bold;
+    line-height: 2;
+    margin: 40px;
+  }
+
+  .footer-link3 {
+    color: #655c56;
+    font-weight: bold;
+    line-height: 2;
+    margin: 40px;*/
+}
+
+a:hover{
+  color:#EAF6F6;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 .top-container {
+  /* Mountain picture, clouds*/
   background-color: #effcef;
-  position: relative;
   padding-top: 100px;
+  position: relative;
 }
 
 .middle-container {
-  background-color: blue;
-  height: 200px;
-  width: 200px;
+/*Hello, My skills, contact me*/
 }
 
 .bottom-container {
-  background-color: red;
-  height: 200px;
-  width: 200px;
+  /*footer. Links*/
+  background-color: #94d3ac;
+  padding: 50px;
+
 }
 
 .pro {
   text-decoration: underline;
 }
 
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message{
+  width:40%;
+  /*40-top auto-left & right 60-bottom*/
+  margin:40px auto 60px;
+}
+
+.copyright{
+color: #EAF6F6;
+font-size:0.75rem;
+padding: 20px 0;
+}
+
 .bottomCloud {
+  left: 250px;
   position: absolute;
 }
 
 .topCloud {
   position: absolute;
-  right: 370px;
+  right: 300px;
   top: 25px;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  /*This automatically centers the div on the screen.*/
+  text-align: left;
+  width: 50%;
+  /*This shrinks the div box making the text come closer together*/
+}
+
+.layout-img {
+  float: left;
+  /*This pushes the image to the left and allows the text to wrap around it.*/
+  margin-right: 30px;
+  width: 25%;
+}
+
+.develop-img {
+  float: right;
+  /*This pushes the image to the right and allows the text to wrap around it.*/
+  margin-left: 30px;
+  width: 25%;
+}
+
+/*examples on how to clear the text so it doesn't wrap around the image.it will
+move text below the image while keeping the header in place (which is still wrapping
+around the image).
+
+.design-desc{
+  clear: left;
+}
+
+.develop-desc{
+  clear: right;
+}
+*/
+
+.contact-me {
+  margin: 60px;
+}
+
+/* TODO: FIX THIS BUTTON LATER */
+.contactButton {
+  font-family: 'Montserrat', sans-serif;
+  color: #EAF6F6 !important;
+  font-size: 18px;
+  text-shadow: 0px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #94D3AC;
+  background: #CCEDD2;
+  background: linear-gradient(top, #CCEDD2, #94D3AC);
+  background: -ms-linear-gradient(top, #CCEDD2, #94D3AC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCEDD2), to(#94D3AC));
+  background: -moz-linear-gradient(top, #CCEDD2, #94D3AC);
+}
+
+.icon-attribution{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon-attribution-anchor{
+  margin:0 0 0 0;
 }
